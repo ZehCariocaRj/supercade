@@ -62,8 +62,7 @@ case "${OS}" in
 esac
 
 if [ $# -eq 1 ]; then
-	echo ${WINE} ${FBA} -1p "${romname}"
-	${WINE} ${FBA} -1p "${romname}"
+	${WINE} ${FBA} -1p "${romname}" &
 else
 	PLAYER=$2
 	IP=$3
